@@ -58,3 +58,15 @@ def notSetLetter(letter, spot):
             filter_dic[i] = False
     dic = dic[filter_dic]
     print(dic)
+    
+def knowIs(word):
+    wordL(len(word))
+    for i in range(0,len(word)):
+        if (word[i]!="?"):
+            setLetter(word[i],i)
+            
+def knowIsNot(word):
+    wordL(len(word))
+    for i in range(0,len(word)):
+        if (word[i]!="?"):
+            notSetLetter(word[i],i)
